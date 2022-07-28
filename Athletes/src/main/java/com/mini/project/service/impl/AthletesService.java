@@ -36,9 +36,10 @@ public class AthletesService implements IAthletesService {
 		return athletesrepository.deleteById(id);
 	}
 	
+	
 	@Override
-	public int gantidata(Integer id,String data) {
-		return athletesrepository.gantidata(id,data);
+	public int gantidata(Integer id, AthletesModel model) {
+		return athletesrepository.gantidata(id,model);
 	}
 	
 }

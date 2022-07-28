@@ -10,10 +10,13 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="divisi")
-public class Divisi {
+@Table(name="athletestyle")
+public class AthleteStyle {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int divisi_id;
-	private String name;
+	private int id;
+	private int athlete_id;
+	private int style_id;
+		
 }

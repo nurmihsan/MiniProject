@@ -17,7 +17,7 @@ public class AthletesModel {
 	private int id;
 	private String nama;
 	private String title;
-	private int arena_id;
-	private int divisi_id;
-	private int fightingstyle_id;
+	private String arena;
+	private String divisi;
+
 }

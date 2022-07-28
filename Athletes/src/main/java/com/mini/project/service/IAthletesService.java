@@ -10,6 +10,6 @@ public interface IAthletesService {
 	int insert(AthletesModel model);
 	List<AthletesModel> readAllData();
 	int deleteById(int id);
-	int gantidata(Integer id, String data);
+	int gantidata(Integer id, AthletesModel model);
 
 }

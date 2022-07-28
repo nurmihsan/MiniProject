@@ -12,7 +12,7 @@ public interface IAthletesRepository {
 
 	public int deleteById(Integer id);
 
-	public int gantidata(Integer id, String data);
+	int gantidata(Integer id, AthletesModel model);
 
 
 }

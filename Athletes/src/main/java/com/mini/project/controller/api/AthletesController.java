@@ -27,6 +27,7 @@ public class AthletesController {
 		athletesservice.insert(model);
 		return "success";
 	}
+	
 	@GetMapping("/readall")
 	public List<AthletesModel> getAllData(){
 		return athletesservice.readAllData();
@@ -38,7 +39,7 @@ public class AthletesController {
 	}
 	
 	@PutMapping("/update")
-	public String putData(@RequestParam int id, String data) {
-		return "update success "+ athletesservice.gantidata(id, data);
+	public String putData(@RequestParam int id, AthletesModel model) {
+		return "update success "+ athletesservice.gantidata(id,model);
 	}
 }
