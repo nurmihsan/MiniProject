@@ -10,10 +10,10 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="fighting_style")
-public class FightingStyle {
+@Table(name="style")
+public class FightingStyleModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int fightingsyle_id;
-	private String nama_beladiri;
+	private int style_id;
+	private String beladiri;
 }

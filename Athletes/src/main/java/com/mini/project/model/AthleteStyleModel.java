@@ -11,7 +11,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name="athletestyle")
-public class AthleteStyle {
+public class AthleteStyleModel {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
