@@ -20,6 +20,7 @@ import com.mini.project.filter.CustomeAuthorizationFilter;
 
 import lombok.RequiredArgsConstructor;
 
+
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
@@ -27,7 +28,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	private final UserDetailsService userDetailService;
 	private final BCryptPasswordEncoder bCryptPasswordEncoder;
+	
 
+	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		// TODO Auto-generated method stub
