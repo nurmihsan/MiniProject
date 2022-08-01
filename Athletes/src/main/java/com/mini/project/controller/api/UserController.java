@@ -50,8 +50,6 @@ public class UserController {
 	
 	private CustomeAuthenticationFilter customeAuthenticationFilter;
 	
-	@Autowired    
-	private BCryptPasswordEncoder bCryptPasswordEncoder;
 	
 	@GetMapping("/users")
 	public ResponseEntity<List<User>> getUsers(){
